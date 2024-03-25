@@ -14,3 +14,7 @@ function divide(x, y) {
 let firstNumber = x;
 let operator = operatorOption;
 let secondNumber = y;
+
+function operate(firstNumber, operator, secondNumber) {
+    
+}
