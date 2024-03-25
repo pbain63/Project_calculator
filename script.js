@@ -13,7 +13,10 @@ function divide(x, y) {
 function square(a) {
   return a * a;
 }
-// console.log(square(4,3));
+function percentage(a) {
+  return (a/100);
+}
+// console.log(percentage(5));
 let firstNumber = x;
 let operator = operatorOption;
 let secondNumber = y;
