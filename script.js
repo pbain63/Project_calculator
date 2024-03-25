@@ -10,7 +10,10 @@ function multiply(x, y) {
 function divide(x, y) {
   return x / y;
 }
-//   console.log(divide(45, 0));
+function square(a) {
+  return a * a;
+}
+// console.log(square(4,3));
 let firstNumber = x;
 let operator = operatorOption;
 let secondNumber = y;
