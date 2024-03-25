@@ -16,5 +16,10 @@ let operator = operatorOption;
 let secondNumber = y;
 
 function operate(firstNumber, operator, secondNumber) {
+
     
+  add();
+  subtract();
+  multiply();
+  divide();
 }
