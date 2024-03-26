@@ -18,7 +18,7 @@ function userChoice(event) {  //for button (event)
   let displayValue =  event.target.id;
   // event.target.style.backgroundColor = "orange";
   // console.log(displayValue);
-  // display.textContent += displayValue;//-
+  display.textContent += displayValue;
   // console.log(display.textContent);
   
   // return display.textContent;
