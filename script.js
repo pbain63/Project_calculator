@@ -72,12 +72,7 @@ function multiply(x, y) {
 function divide(x, y) {
   return x / y;
 }
-function square(a) {
-  return a * a;
-}
-function percentage(a) {
-  return a / 100;
-}
+
 // console.log(percentage(5));
 let firstNumber = x;
 let operator = operatorOption;
