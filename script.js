@@ -8,8 +8,7 @@ displayContainer.appendChild(display);
 
 // const seven = document.querySelector("#"+CSS.escape('7')); 
 // const seven = document.querySelector(`#${CSS.escape(7)}`); 
-const ac = document.querySelector("#ac"); 
-const undo = document.querySelector("#undo"); 
+
 const nine = document.querySelector("[id='9']"); 
 const eight = document.querySelector("[id='8']"); 
 const seven = document.querySelector("[id='7']"); 
@@ -20,6 +19,16 @@ const three = document.querySelector("[id='3']");
 const two = document.querySelector("[id='2']"); 
 const one = document.querySelector("[id='1']"); 
 const zero = document.querySelector("[id='0']"); 
+const ac = document.querySelector("#ac"); 
+const undo = document.querySelector("#undo"); 
+const percent = document.querySelector("[id='%']"); 
+const division = document.querySelector("[id='/']"); 
+const times = document.querySelector("[id='*']"); 
+const minus = document.querySelector("[id='-']"); 
+const plus = document.querySelector("[id='+']"); 
+const decimal = document.querySelector("[id='.']"); 
+const equal = document.querySelector("[id='=']"); 
+
 
 nine.addEventListener("click", userChoice);
 eight.addEventListener("click", userChoice);
