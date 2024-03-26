@@ -19,11 +19,16 @@ const two = document.querySelector("[id='2']");
 const one = document.querySelector("[id='1']"); 
 const zero = document.querySelector("[id='0']"); 
 
-
-
-seven.addEventListener("click", userChoice);
-eight.addEventListener("click", userChoice);
 nine.addEventListener("click", userChoice);
+eight.addEventListener("click", userChoice);
+seven.addEventListener("click", userChoice);
+six.addEventListener("click", userChoice);
+five.addEventListener("click", userChoice);
+four.addEventListener("click", userChoice);
+three.addEventListener("click", userChoice);
+two.addEventListener("click", userChoice);
+one.addEventListener("click", userChoice);
+zero.addEventListener("click", userChoice);
 
 
 function userChoice(event) {  //for button (event)
