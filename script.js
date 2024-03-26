@@ -25,12 +25,12 @@ function userChoice(event) {  //for button (event)
   
 }
 // console.log(display.textContent);
-// function populateDisplay() { //-
+function populateDisplay() { 
   // display.textContent = displayValue;
   // console.log(display.textContent);
 
   // userChoice();
-// } //-
+} 
 
 function add(x, y) {
   return x + y;
