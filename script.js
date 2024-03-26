@@ -2,9 +2,35 @@ const displayContainer = document.querySelector(".display-container");
 const display = document.createElement("div");
 display.classList.add("display");
 
-display.textContent = 00123456789012;
+// display.textContent = 0;
 
 displayContainer.appendChild(display);
+
+const seven = document.querySelector("[id='7']"); 
+// const seven = document.querySelector("#"+CSS.escape('7')); 
+// const seven = document.querySelector(`#${CSS.escape(7)}`); 
+// const eight = document.querySelector("[id='8']"); //-
+
+// seven.addEventListener("click", userChoice);//-
+// eight.addEventListener("click", userChoice);//-
+
+// function userChoice(event) { //- //for button (event)
+  // let displayValue =  event.target.id;//-
+  // event.target.style.backgroundColor = "orange";
+  // console.log(displayValue);
+  // display.textContent += displayValue;//-
+  // console.log(display.textContent);
+  
+  // return display.textContent;
+  
+// }//-
+// console.log(display.textContent);
+// function populateDisplay() { //-
+  // display.textContent = displayValue;
+  // console.log(display.textContent);
+
+  // userChoice();
+// } //-
 
 function add(x, y) {
   return x + y;
