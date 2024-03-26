@@ -14,8 +14,8 @@ const eight = document.querySelector("[id='8']");
 seven.addEventListener("click", userChoice);
 eight.addEventListener("click", userChoice);
 
-function userChoice(event) { //- //for button (event)
-  // let displayValue =  event.target.id;//-
+function userChoice(event) {  //for button (event)
+  let displayValue =  event.target.id;
   // event.target.style.backgroundColor = "orange";
   // console.log(displayValue);
   // display.textContent += displayValue;//-
