@@ -14,7 +14,7 @@ const eight = document.querySelector("[id='8']");
 seven.addEventListener("click", userChoice);
 eight.addEventListener("click", userChoice);
 
-// function userChoice(event) { //- //for button (event)
+function userChoice(event) { //- //for button (event)
   // let displayValue =  event.target.id;//-
   // event.target.style.backgroundColor = "orange";
   // console.log(displayValue);
@@ -23,7 +23,7 @@ eight.addEventListener("click", userChoice);
   
   // return display.textContent;
   
-// }//-
+}
 // console.log(display.textContent);
 // function populateDisplay() { //-
   // display.textContent = displayValue;
