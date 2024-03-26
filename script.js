@@ -11,8 +11,8 @@ const seven = document.querySelector("[id='7']");
 // const seven = document.querySelector(`#${CSS.escape(7)}`); 
 const eight = document.querySelector("[id='8']"); 
 
-seven.addEventListener("click", userChoice);//-
-// eight.addEventListener("click", userChoice);//-
+seven.addEventListener("click", userChoice);
+eight.addEventListener("click", userChoice);
 
 // function userChoice(event) { //- //for button (event)
   // let displayValue =  event.target.id;//-
