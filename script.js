@@ -40,7 +40,11 @@ three.addEventListener("click", userChoice);
 two.addEventListener("click", userChoice);
 one.addEventListener("click", userChoice);
 zero.addEventListener("click", userChoice);
+
+ac.addEventListener("click", acUserChoice);
 decimal.addEventListener("click", decimalUserChoice);
+
+
 
 // function decimalUserChoice(event) {
 //   let displayValue = event.target.id;
