@@ -1,5 +1,5 @@
 const displayContainer = document.querySelector(".display-container");
-// const display = document.createElement("div");
+const display = document.createElement("div");
 // display.classList.add("display");
 
 // display.textContent = "0123456789012";
