@@ -6,13 +6,25 @@ display.classList.add("display");
 
 displayContainer.appendChild(display);
 
-const seven = document.querySelector("[id='7']"); 
 // const seven = document.querySelector("#"+CSS.escape('7')); 
 // const seven = document.querySelector(`#${CSS.escape(7)}`); 
+const nine = document.querySelector("[id='9']"); 
 const eight = document.querySelector("[id='8']"); 
+const seven = document.querySelector("[id='7']"); 
+const six = document.querySelector("[id='6']"); 
+const five = document.querySelector("[id='5']"); 
+const four = document.querySelector("[id='4']"); 
+const three = document.querySelector("[id='3']"); 
+const two = document.querySelector("[id='2']"); 
+const one = document.querySelector("[id='1']"); 
+const zero = document.querySelector("[id='0']"); 
+
+
 
 seven.addEventListener("click", userChoice);
 eight.addEventListener("click", userChoice);
+nine.addEventListener("click", userChoice);
+
 
 function userChoice(event) {  //for button (event)
   let displayValue =  event.target.id;
