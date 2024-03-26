@@ -8,6 +8,8 @@ displayContainer.appendChild(display);
 
 // const seven = document.querySelector("#"+CSS.escape('7')); 
 // const seven = document.querySelector(`#${CSS.escape(7)}`); 
+const ac = document.querySelector("#ac"); 
+const undo = document.querySelector("#undo"); 
 const nine = document.querySelector("[id='9']"); 
 const eight = document.querySelector("[id='8']"); 
 const seven = document.querySelector("[id='7']"); 
