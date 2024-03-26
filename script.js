@@ -40,7 +40,18 @@ three.addEventListener("click", userChoice);
 two.addEventListener("click", userChoice);
 one.addEventListener("click", userChoice);
 zero.addEventListener("click", userChoice);
-decimal.addEventListener("click", userChoice);
+decimal.addEventListener("click", decimalUserChoice);
+
+// function decimalUserChoice(event) {
+//   let displayValue = event.target.id;
+//   if (display.textContent.includes(".")) {
+//    return false
+//   } else {
+//     return true
+//   }
+  
+//   console.log(display.textContent);
+// }
 
 function userChoice(event) {  //for button (event)
   let displayValue =  event.target.id;
