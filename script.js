@@ -21,7 +21,7 @@ const one = document.querySelector("[id='1']");
 const zero = document.querySelector("[id='0']"); 
 const ac = document.querySelector("#ac"); 
 const undo = document.querySelector("#undo"); 
-const percent = document.querySelector("[id='%']"); 
+// const percent = document.querySelector("[id='%']"); 
 const division = document.querySelector("[id='/']"); 
 const times = document.querySelector("[id='*']"); 
 const minus = document.querySelector("[id='-']"); 
