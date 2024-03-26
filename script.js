@@ -4,7 +4,7 @@ display.classList.add("display");
 
 display.textContent = "0123456789012";
 
-// displayContainer.appendChild(display);
+displayContainer.appendChild(display);
 
 function add(x, y) {
   return x + y;
