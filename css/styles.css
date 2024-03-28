@@ -8,10 +8,13 @@
   border: 2px solid red;
 }
 
-/* .sevenStarter-row-container {
+.sevenStarter-row-container {
   width: 10rem;
   border: 2px solid red;
-} */
+  display: flex;
+  /* gap: 1rem; */
+  justify-content: space-between;
+}
 
 /* #ac {
     color: red;
