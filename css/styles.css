@@ -8,6 +8,13 @@
   border: 2px solid red;
 }
 
+.ac-row-container {
+    width: 10rem;
+    border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
 .sevenStarter-row-container {
   width: 10rem;
   border: 2px solid red;
