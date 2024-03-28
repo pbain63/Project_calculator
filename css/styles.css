@@ -9,8 +9,8 @@
 }
 
 .ac-row-container {
-    width: 10rem;
-    border: 2px solid red;
+  width: 10rem;
+  border: 2px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -31,7 +31,7 @@
 }
 
 .zeroStarter-row-container {
-    width: 10rem;
+  width: 10rem;
   border: 2px solid red;
   display: flex;
   /* gap: 1rem; */
