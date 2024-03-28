@@ -1,15 +1,21 @@
 * {
-    box-sizing: border-box;
-  }
-  
-.display-container{
-width: 10rem;
-height:3rem;
-border: 2px solid red;
+  box-sizing: border-box;
 }
+
+.display-container {
+  width: 10rem;
+  height: 3rem;
+  border: 2px solid red;
+}
+
+/* .sevenStarter-row-container {
+  width: 10rem;
+  border: 2px solid red;
+} */
+
 /* #ac {
     color: red;
 } */
-[id='7']{
-    /* color: red; */
+[id="7"] {
+  /* color: red; */
 }
