@@ -29,3 +29,11 @@
 [id="7"] {
   /* color: red; */
 }
+
+.zeroStarter-row-container {
+    width: 10rem;
+  border: 2px solid red;
+  display: flex;
+  /* gap: 1rem; */
+  justify-content: space-between;
+}
