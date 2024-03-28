@@ -2,7 +2,11 @@
     box-sizing: border-box;
   }
   
-
+.display-container{
+width: 10rem;
+height:3rem;
+border: 2px solid red;
+}
 /* #ac {
     color: red;
 } */
