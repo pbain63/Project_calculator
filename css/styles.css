@@ -1,55 +1,130 @@
-* {
-  box-sizing: border-box;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .container {
+  width: 14rem;
+  text-align: end;
+
+  border: 2px solid black;
+  background-color: black;
 }
 
 .display-container {
-  width: 10rem;
   height: 3rem;
-  border: 2px solid red;
+  border: 5px solid black;
+  background-color: gainsboro;
 }
 
+.all-button {
+}
+
+.cal-button {
+  padding: 10px 15px;
+}
 .ac-row-container {
-  width: 10rem;
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
+  margin-top: 6px;
 }
 
 .sevenStarter-row-container {
-  width: 10rem;
-  border: 2px solid red;
   display: flex;
-  /* gap: 1rem; */
+
   justify-content: space-between;
+  margin-top: 2px;
 }
 
 .fourStarter-row-container {
-  width: 10rem;
-  border: 2px solid red;
   display: flex;
-  /* gap: 1rem; */
+
   justify-content: space-between;
+  margin-top: 2px;
 }
 
 .oneStarter-row-container {
-  width: 10rem;
-  border: 2px solid red;
   display: flex;
-  /* gap: 1rem; */
+
   justify-content: space-between;
+  margin-top: 2px;
 }
 
-/* #ac {
-    color: red;
-} */
-[id="7"] {
-  /* color: red; */
+#undo {
+  padding-right: 38px;
+  padding-left: 38px;
+  margin-left: 2px;
+  background-color: chocolate;
+}
+[id="7"],
+[id="4"],
+[id="1"],
+[id="0"] {
+  padding-right: 21px;
+  padding-left: 21px;
 }
 
+[id="8"],
+[id="9"] {
+  padding-right: 21px;
+  padding-left: 21px;
+}
+[id="5"] {
+  padding-right: 21px;
+  padding-left: 21px;
+  margin-left: 1px;
+}
+[id="6"] {
+  padding-right: 21.5px;
+  padding-left: 21.5px;
+}
+[id="2"],
+[id="3"] {
+  padding-right: 21px;
+  padding-left: 21px;
+}
+[id="."] {
+  padding-right: 22.5px;
+  padding-left: 22.5px;
+  margin-left: 1px;
+}
+[id="*"] {
+  padding-right: 21px;
+  padding-left: 21px;
+}
+[id="-"] {
+  padding-right: 21.25px;
+  padding-left: 21.25px;
+}
+[id="+"] {
+  padding-right: 19.5px;
+  padding-left: 19.5px;
+}
+[id="/"] {
+  padding-right: 21.5px;
+  padding-left: 21.5px;
+}
+
+[id="="] {
+  padding-right: 48.5px;
+  padding-left: 48.5px;
+  background-color: lightseagreen;
+}
 .zeroStarter-row-container {
-  width: 10rem;
-  border: 2px solid red;
-  display: flex;
-  /* gap: 1rem; */
-  justify-content: space-between;
+  margin-top: 2px;
+  margin-bottom: 3px;
 }
+#ac {
+  background-color: crimson;
+}
+
+[id="/"],
+[id="*"],
+[id="-"],
+[id="+"] {
+  background-color: cornflowerblue;
+}
+[id="."],
+[id="0"] {
+  background-color: lightblue;
+} */
