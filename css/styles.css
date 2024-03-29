@@ -31,6 +31,14 @@
   justify-content: space-between;
 }
 
+.oneStarter-row-container {
+  width: 10rem;
+  border: 2px solid red;
+  display: flex;
+  /* gap: 1rem; */
+  justify-content: space-between;
+}
+
 /* #ac {
     color: red;
 } */
