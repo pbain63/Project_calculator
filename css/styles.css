@@ -3,6 +3,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .container {
   width: 14rem;
   text-align: end;
@@ -52,6 +53,7 @@ body {
   margin-left: 2px;
   background-color: chocolate;
 }
+
 [id="7"],
 [id="4"],
 [id="1"],
@@ -65,37 +67,45 @@ body {
   padding-right: 21px;
   padding-left: 21px;
 }
+
 [id="5"] {
   padding-right: 21px;
   padding-left: 21px;
   margin-left: 1px;
 }
+
 [id="6"] {
   padding-right: 21.5px;
   padding-left: 21.5px;
 }
+
 [id="2"],
 [id="3"] {
   padding-right: 21px;
   padding-left: 21px;
 }
+
 [id="."] {
   padding-right: 22.5px;
   padding-left: 22.5px;
   margin-left: 1px;
 }
+
 [id="*"] {
   padding-right: 21px;
   padding-left: 21px;
 }
+
 [id="-"] {
   padding-right: 21.25px;
   padding-left: 21.25px;
 }
+
 [id="+"] {
   padding-right: 19.5px;
   padding-left: 19.5px;
 }
+
 [id="/"] {
   padding-right: 21.5px;
   padding-left: 21.5px;
@@ -106,10 +116,12 @@ body {
   padding-left: 48.5px;
   background-color: lightseagreen;
 }
+
 .zeroStarter-row-container {
   margin-top: 2px;
   margin-bottom: 3px;
 }
+
 #ac {
   background-color: crimson;
 }
@@ -120,6 +132,7 @@ body {
 [id="+"] {
   background-color: cornflowerblue;
 }
+
 [id="."],
 [id="0"] {
   background-color: lightblue;
