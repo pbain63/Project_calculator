@@ -8,15 +8,20 @@ displayResult.classList.add("displayResult");
 displayContainer.appendChild(display);
 displayContainer.appendChild(displayResult);
 
-
-
 const calculatorButtons = document.querySelectorAll(".cal-button");
+
+const acButton = document.querySelector("#ac");
+acButton.addEventListener("click", () => {
+  // displayResult.textContent = 0;
+  display.textContent = 0;
+});
 
 let firstNumber;
 let operator;
 let secondNumber;
-// let num1;
-// let num2;
+let num1;
+let num2;
+let operatorSign;
 
 calculatorButtons.forEach((calButton) => {
   calButton.addEventListener("click", userSelect);
@@ -25,78 +30,106 @@ calculatorButtons.forEach((calButton) => {
 function userSelect() {
   // e.target.style.backgroundColor = "orange";
 
-   firstNumber = this.innerHTML;
+  firstNumber = this.innerHTML;
+
   if (
-    firstNumber == "0" ||
+    // firstNumber == "0" ||
     firstNumber == "1" ||
-    firstNumber == "2" ||
-    firstNumber == "3" ||
-    firstNumber == "4" ||
-    firstNumber == "5" ||
-    firstNumber == "6" ||
-    firstNumber == "7" ||
-    firstNumber == "8" ||
-    firstNumber == "9"
+    firstNumber == "2" // ||
+    // firstNumber == "3" ||
+    // firstNumber == "4" ||
+    // firstNumber == "5" ||
+    // firstNumber == "6" ||
+    // firstNumber == "7" ||
+    // firstNumber == "8" ||
+    // firstNumber == "9"
   ) {
+    // display.textContent = "";
+
     display.textContent += firstNumber;
     console.log(display.textContent);
-    // userChoiceEqual();
-    
-  } else {
+    userChoiceEqual();
+  } else if (firstNumber.includes("*")) {
+    operatorSign = firstNumber;
+
+    console.log(operatorSign);
     userChoiceOperator();
+  } else if (firstNumber.includes("3") || firstNumber.includes("4")) {
+    // display.textContent = "";
+    // secondNumber = firstNumber;
+
+    // console.log(secondNumber);
+    display.textContent += firstNumber;
+    secondNumber = display.textContent;
+    console.log(display.textContent);
+    console.log(secondNumber);
+    userChoiceEqual();
+  } else if (firstNumber.includes("=")) {
   }
-  
 }
-
-// nine.addEventListener("click", userChoice);
-// eight.addEventListener("click", userChoice);
-// seven.addEventListener("click", userChoice);
-// six.addEventListener("click", userChoice);
-// five.addEventListener("click", userChoice);
-// four.addEventListener("click", userChoice);
-// three.addEventListener("click", userChoice);
-// two.addEventListener("click", userChoice);
-// one.addEventListener("click", userChoice);
-// zero.addEventListener("click", userChoice);
-
-// division.addEventListener("click", operatorUserChoice);
-// times.addEventListener("click", operatorUserChoice);
-// minus.addEventListener("click", operatorUserChoice);
-// plus.addEventListener("click", operatorUserChoice);
-
-// equal.addEventListener("click", equalUserChoice);
 
 function userChoiceOperator() {
   // operator = event.target.id;
-  // let operatorChoice = this.innerHTML;
-  // console.log(operator);
 
-  if (firstNumber == "/") {
-    firstNumber = divide;
-  } else if (firstNumber == "*") {
-    firstNumber = multiply;
-  } else if (firstNumber == "-") {
-    firstNumber = subtract;
-  } else if (firstNumber == "+") {
-    firstNumber = add;
+  if (operatorSign == "/") {
+    operatorSign = divide;
+  } else if (operatorSign == "*") {
+    operatorSign = multiply;
+  } else if (operatorSign == "-") {
+    operatorSign = subtract;
+  } else if (operatorSign == "+") {
+    operatorSign = add;
   }
   display.textContent = "";
   userChoiceEqual();
-
-  // userChoice(event);
-  // console.log(userChoice(event));
 }
-
-function userChoiceEqual(value) {
+//-
+// function userChoiceEqual() {
+//   // let equalButton = this.innerHTML;
+//   if (display.textContent) { /// Here is the problem
+//      num1 = display.textContent;
+//     console.log(num1);
+//   } else if (operatorSign) {  /// Here is the problem
+//     operator = operatorSign;
+//     console.log(operator);
+//   } else if ( secondNumber === firstNumber) {  /// Here is the problem
+//      num2 = secondNumber;
+//     console.log(num2);
+//   }
+//   // let num1 = firstNumber;
+//   // console.log(num1);
+//   // operator = operatorSign;
+//   // console.log(operator);
+//   // let num2 = secondNumber;
+//   // console.log(num2);
+//   // let result = operate(num1, num2, operator);
+//   // displayResult.textContent = result;
+// }
+//-
+function userChoiceEqual() {
   // let equalButton = this.innerHTML;
-  let num1 = firstNumber;
-  console.log(num1);
-  operator = value;
-  let num2 = secondNumber;
-  let result = operate(num1, num2, operator);
-  displayResult.textContent = result;
+  if (secondNumber) {
+    /// Here is the problem
+    num2 = secondNumber;
+    console.log(num2);
+  } else if (operatorSign) {
+    /// Here is the problem
+    operator = operatorSign;
+    console.log(operator);
+  } else if (display.textContent) {
+    /// Here is the problem
+    num1 = display.textContent;
+    console.log(num1);
+  }
+  // let num1 = firstNumber;
+  // console.log(num1);
+  // operator = operatorSign;
+  // console.log(operator);
+  // let num2 = secondNumber;
+  // console.log(num2);
+  // let result = operate(num1, num2, operator);
+  // displayResult.textContent = result;
 }
-
 function add(num1, num2) {
   return num1 + num2;
 }
@@ -113,7 +146,15 @@ function divide(num1, num2) {
 function operate(num1, num2, operator) {
   // console.log(num1);
   return operator(num1, num2);
-  // display.textContent = solution;
-  // return solution;
 }
 // console.log(operate(8, 6, multiply));
+
+const equal = document.querySelector("[id='=']");
+equal.addEventListener("click", () => {
+  // displayResult.textContent = "";
+  // display.textContent = "";
+  let result = operate(num1, num2, operator);
+  display.textContent = result;
+  console.log(display.textContent);
+  // display.textContent = "";
+});
