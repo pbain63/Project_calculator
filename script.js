@@ -34,16 +34,16 @@ function userSelect() {
   firstNumber = this.innerHTML;
 
   if (
-    // firstNumber == "0" ||
+    firstNumber == "0" ||
     firstNumber == "1" ||
-    firstNumber == "2" // ||
-    // firstNumber == "3" ||
-    // firstNumber == "4" ||
-    // firstNumber == "5" ||
-    // firstNumber == "6" ||
-    // firstNumber == "7" ||
-    // firstNumber == "8" ||
-    // firstNumber == "9"
+    firstNumber == "2" ||
+    firstNumber == "3" ||
+    firstNumber == "4" ||
+    firstNumber == "5" ||
+    firstNumber == "6" ||
+    firstNumber == "7" ||
+    firstNumber == "8" ||
+    firstNumber == "9"
   ) {
     // display.textContent = "";
 
