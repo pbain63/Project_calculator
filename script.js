@@ -83,9 +83,7 @@ function userChoiceOperator() {
   display.textContent = "";
   userChoiceEqual();
 }
-//-
 
-//-
 function userChoiceEqual() {
   // let equalButton = this.innerHTML;
   if (secondNumber) {
