@@ -84,27 +84,7 @@ function userChoiceOperator() {
   userChoiceEqual();
 }
 //-
-// function userChoiceEqual() {
-//   // let equalButton = this.innerHTML;
-//   if (display.textContent) { /// Here is the problem
-//      num1 = display.textContent;
-//     console.log(num1);
-//   } else if (operatorSign) {  /// Here is the problem
-//     operator = operatorSign;
-//     console.log(operator);
-//   } else if ( secondNumber === firstNumber) {  /// Here is the problem
-//      num2 = secondNumber;
-//     console.log(num2);
-//   }
-//   // let num1 = firstNumber;
-//   // console.log(num1);
-//   // operator = operatorSign;
-//   // console.log(operator);
-//   // let num2 = secondNumber;
-//   // console.log(num2);
-//   // let result = operate(num1, num2, operator);
-//   // displayResult.textContent = result;
-// }
+
 //-
 function userChoiceEqual() {
   // let equalButton = this.innerHTML;
