@@ -37,8 +37,8 @@ function userSelect() {
     firstNumber == "0" ||
     firstNumber == "1" ||
     firstNumber == "2" ||
-    firstNumber == "3" ||
-    firstNumber == "4" ||
+    // firstNumber == "3" || if I select from secondNum 13* 49 doesn't work
+    // firstNumber == "4" ||
     firstNumber == "5" ||
     firstNumber == "6" ||
     firstNumber == "7" ||
@@ -61,18 +61,7 @@ function userSelect() {
 
     console.log(operatorSign);
     userChoiceOperator();
-  } else if (
-    firstNumber.includes("0") ||
-    firstNumber.includes("1") ||
-    firstNumber.includes("2") ||
-    firstNumber.includes("3") ||
-    firstNumber.includes("4") ||
-    firstNumber.includes("5") ||
-    firstNumber.includes("6") ||
-    firstNumber.includes("7") ||
-    firstNumber.includes("8") ||
-    firstNumber.includes("9")
-  ) {
+  } else if (firstNumber.includes("3") || firstNumber.includes("4")) {
     // display.textContent = "";
     // secondNumber = firstNumber;
 
