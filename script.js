@@ -47,11 +47,16 @@ function userSelect() {
   ) {
     // display.textContent = "";
 
-    display.textContent += firstNumber; 
+    display.textContent += firstNumber;
     firstNumberChoice = display.textContent;
     console.log(display.textContent);
     userChoiceEqual();
-  } else if (firstNumber.includes("*") || firstNumber.includes("-")) {
+  } else if (
+    firstNumber.includes("/") ||
+    firstNumber.includes("*") ||
+    firstNumber.includes("-") ||
+    firstNumber.includes("+")
+  ) {
     operatorSign = firstNumber;
 
     console.log(operatorSign);
