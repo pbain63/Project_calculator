@@ -61,7 +61,18 @@ function userSelect() {
 
     console.log(operatorSign);
     userChoiceOperator();
-  } else if (firstNumber.includes("3") || firstNumber.includes("4")) {
+  } else if (
+    firstNumber.includes("0") ||
+    firstNumber.includes("1") ||
+    firstNumber.includes("2") ||
+    firstNumber.includes("3") ||
+    firstNumber.includes("4") ||
+    firstNumber.includes("5") ||
+    firstNumber.includes("6") ||
+    firstNumber.includes("7") ||
+    firstNumber.includes("8") ||
+    firstNumber.includes("9")
+  ) {
     // display.textContent = "";
     // secondNumber = firstNumber;
 
