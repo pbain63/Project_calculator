@@ -17,6 +17,7 @@ acButton.addEventListener("click", () => {
 });
 
 let firstNumber;
+let choiceFirstNumber;
 let operator;
 let secondNumber;
 let num1;
@@ -46,10 +47,11 @@ function userSelect() {
   ) {
     // display.textContent = "";
 
-    display.textContent += firstNumber;
+    display.textContent += firstNumber; 
+    firstNumberChoice = display.textContent;
     console.log(display.textContent);
     userChoiceEqual();
-  } else if (firstNumber.includes("*")) {
+  } else if (firstNumber.includes("*") || firstNumber.includes("-")) {
     operatorSign = firstNumber;
 
     console.log(operatorSign);
@@ -94,9 +96,9 @@ function userChoiceEqual() {
     /// Here is the problem
     operator = operatorSign;
     console.log(operator);
-  } else if (display.textContent) {
+  } else if (firstNumberChoice) {
     /// Here is the problem
-    num1 = display.textContent;
+    num1 = firstNumberChoice;
     console.log(num1);
   }
   // let num1 = firstNumber;
