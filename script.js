@@ -12,7 +12,7 @@ const calculatorButtons = document.querySelectorAll(".cal-button");
 
 const acButton = document.querySelector("#ac");
 acButton.addEventListener("click", () => {
-  // displayResult.textContent = 0;
+  
   display.textContent = 0;
 });
 
@@ -33,43 +33,7 @@ function userSelect() {
 
   firstNumber = this.innerHTML;
 
-  if (
-    firstNumber == "0" ||
-    firstNumber == "1" ||
-    firstNumber == "2" ||
-    // firstNumber == "3" || //if I select from secondNum condition, 13* 49 doesn't work
-    // firstNumber == "4" ||
-    firstNumber == "5" ||
-    firstNumber == "6" ||
-    firstNumber == "7" ||
-    firstNumber == "8" ||
-    firstNumber == "9"
-  ) {
-    // display.textContent = "";
-
-    display.textContent += firstNumber;
-    // firstNumberChoice = display.textContent;
-    console.log(display.textContent);
-    userChoiceEqual();
-  } else if (
-    firstNumber.includes("/") ||
-    firstNumber.includes("*") ||
-    firstNumber.includes("-") ||
-    firstNumber.includes("+")
-  ) {
-    operatorSign = firstNumber;
-
-    console.log(operatorSign);
-    userChoiceOperator();
-  } else if ((firstNumber !== "") && (operatorSign !== "")) {
-    // display.textContent = "";
-
-    display.textContent += firstNumber;
-    secondNumber = display.textContent;
-    // console.log(display.textContent);
-    console.log(secondNumber);
-    userChoiceEqual();
-  } 
+ 
 }
 
 function userChoiceOperator() {
@@ -84,31 +48,11 @@ function userChoiceOperator() {
   } else if (operatorSign == "+") {
     operatorSign = add;
   }
-  // display.textContent = "";
+  
   userChoiceEqual();
 }
 
-// function userChoiceEqual() {
-//   // let equalButton = this.innerHTML;
-//   if (secondNumber) {
-//     num2 = secondNumber;
-//     console.log(num2);
-//   } else if (operatorSign) {
-//     operator = operatorSign;
-//     console.log(operator);
-//   } else if (firstNumber) {
-//     num1 = firstNumber;
-//     console.log(num1);
-//   }
-//   // let num1 = firstNumber;
-//   // console.log(num1);
-//   // operator = operatorSign;
-//   // console.log(operator);
-//   // let num2 = secondNumber;
-//   // console.log(num2);
-//   // let result = operate(num1, num2, operator);
-//   // displayResult.textContent = result;
-// }
+
 function add(num1, num2) {
   return num1 + num2;
 }
@@ -130,10 +74,9 @@ function operate(num1, num2, operator) {
 
 const equal = document.querySelector("[id='=']");
 equal.addEventListener("click", () => {
-  // displayResult.textContent = "";
-  // display.textContent = "";
+  
   let result = operate(num1, num2, operator);
   display.textContent = result;
   console.log(display.textContent);
-  // display.textContent = "";
+ 
 });
