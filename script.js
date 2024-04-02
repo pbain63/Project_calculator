@@ -13,7 +13,7 @@ const calculatorButtons = document.querySelectorAll(".cal-button");
 const acButton = document.querySelector("#ac");
 
 acButton.addEventListener("click", () => {
-  acDisplay= ac.id;
+  acDisplay = ac.id;
   console.log(acDisplay);
 });
 
@@ -33,6 +33,17 @@ numberButtons.forEach((numberButton) => {
 function handleNumberClick(event) {
   numberDisplay = event.target.id;
   console.log(numberDisplay);
+
+  if (numberDisplay ) {
+    num1 = numberDisplay;
+    console.log(num1);
+  } else if (operatorDisplay) {
+    operator = operatorDisplay;
+    console.log(operator);
+  } else if (numberDisplay !== "" && operator !== "") {
+    num2 = numberDisplay;
+    console.log(num2);
+  }
 }
 
 const operatorButtons = document.querySelectorAll(".operator-button");
