@@ -16,7 +16,7 @@ acButton.addEventListener("click", () => {
   display.textContent = 0;
 });
 
-let firstNumber;
+let numberShow;
 let choiceFirstNumber;
 let operator;
 let secondNumber;
@@ -28,10 +28,11 @@ calculatorButtons.forEach((calButton) => {
   calButton.addEventListener("click", userSelect);
 });
 
-function userSelect() {
+function handleNumberClick(event) {
   // e.target.style.backgroundColor = "orange";
 
-  firstNumber = this.innerHTML;
+
+  numberShow = event.target.id;
 
  
 }
