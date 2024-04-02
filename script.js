@@ -17,12 +17,12 @@ acButton.addEventListener("click", () => {
 });
 
 let numberShow;
-let choiceFirstNumber;
+let operatorShow;
 let operator;
 let secondNumber;
 let num1;
 let num2;
-let operatorSign;
+
 
 calculatorButtons.forEach((calButton) => {
   calButton.addEventListener("click", userSelect);
@@ -35,6 +35,11 @@ function handleNumberClick(event) {
   numberShow = event.target.id;
 
  
+}
+
+function handleOperatorClick(event) {
+  operatorShow = event.target.id;
+
 }
 
 function userChoiceOperator() {
@@ -50,7 +55,7 @@ function userChoiceOperator() {
     operatorSign = add;
   }
   
-  userChoiceEqual();
+
 }
 
 
