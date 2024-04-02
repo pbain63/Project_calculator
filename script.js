@@ -11,53 +11,59 @@ displayContainer.appendChild(displayResult);
 const calculatorButtons = document.querySelectorAll(".cal-button");
 
 const acButton = document.querySelector("#ac");
+
 acButton.addEventListener("click", () => {
-  
-  display.textContent = 0;
+  acShow = ac.id;
+  console.log(acShow);
 });
 
 let numberShow;
 let operatorShow;
 let operator;
-let secondNumber;
 let num1;
 let num2;
 
+const nine = document.querySelector("[id='9']");
+const eight = document.querySelector("[id='8']");
+const seven = document.querySelector("[id='7']");
+const six = document.querySelector("[id='6']");
+const five = document.querySelector("[id='5']");
+const four = document.querySelector("[id='4']");
+const three = document.querySelector("[id='3']");
+const two = document.querySelector("[id='2']");
+const one = document.querySelector("[id='1']");
+const zero = document.querySelector("[id='0']");
 
-calculatorButtons.forEach((calButton) => {
-  calButton.addEventListener("click", userSelect);
-});
+nine.addEventListener("click", handleNumberClick);
+eight.addEventListener("click", handleNumberClick);
+seven.addEventListener("click", handleNumberClick);
+six.addEventListener("click", handleNumberClick);
+five.addEventListener("click", handleNumberClick);
+four.addEventListener("click", handleNumberClick);
+three.addEventListener("click", handleNumberClick);
+two.addEventListener("click", handleNumberClick);
+one.addEventListener("click", handleNumberClick);
+zero.addEventListener("click", handleNumberClick);
 
 function handleNumberClick(event) {
-  // e.target.style.backgroundColor = "orange";
-
-
   numberShow = event.target.id;
-
- 
+  console.log(numberShow);
 }
+
+const division = document.querySelector("[id='/']");
+const times = document.querySelector("[id='*']");
+const minus = document.querySelector("[id='-']");
+const plus = document.querySelector("[id='+']");
+
+division.addEventListener("click", handleOperatorClick);
+times.addEventListener("click", handleOperatorClick);
+minus.addEventListener("click", handleOperatorClick);
+plus.addEventListener("click", handleOperatorClick);
 
 function handleOperatorClick(event) {
   operatorShow = event.target.id;
-
+  console.log(operatorShow);
 }
-
-function userChoiceOperator() {
-  // operator = event.target.id;
-
-  if (operatorSign == "/") {
-    operatorSign = divide;
-  } else if (operatorSign == "*") {
-    operatorSign = multiply;
-  } else if (operatorSign == "-") {
-    operatorSign = subtract;
-  } else if (operatorSign == "+") {
-    operatorSign = add;
-  }
-  
-
-}
-
 
 function add(num1, num2) {
   return num1 + num2;
@@ -73,16 +79,17 @@ function divide(num1, num2) {
 }
 
 function operate(num1, num2, operator) {
-  // console.log(num1);
   return operator(num1, num2);
 }
 // console.log(operate(8, 6, multiply));
 
 const equal = document.querySelector("[id='=']");
+
 equal.addEventListener("click", () => {
-  
-  let result = operate(num1, num2, operator);
-  display.textContent = result;
-  console.log(display.textContent);
- 
+  equalShow = equal.id;
+  console.log(equalShow);
+
+  // let result = operate(num1, num2, operator);
+  // display.textContent = result;
+  // console.log(display.textContent);
 });
