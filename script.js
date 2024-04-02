@@ -13,56 +13,37 @@ const calculatorButtons = document.querySelectorAll(".cal-button");
 const acButton = document.querySelector("#ac");
 
 acButton.addEventListener("click", () => {
-  acShow = ac.id;
-  console.log(acShow);
+  acDisplay= ac.id;
+  console.log(acDisplay);
 });
 
-let numberShow;
-let operatorShow;
+let acDisplay;
+let numberDisplay;
+let operatorDisplay;
 let operator;
 let num1;
 let num2;
 
-const nine = document.querySelector("[id='9']");
-const eight = document.querySelector("[id='8']");
-const seven = document.querySelector("[id='7']");
-const six = document.querySelector("[id='6']");
-const five = document.querySelector("[id='5']");
-const four = document.querySelector("[id='4']");
-const three = document.querySelector("[id='3']");
-const two = document.querySelector("[id='2']");
-const one = document.querySelector("[id='1']");
-const zero = document.querySelector("[id='0']");
+const numberButtons = document.querySelectorAll(".number-button");
 
-nine.addEventListener("click", handleNumberClick);
-eight.addEventListener("click", handleNumberClick);
-seven.addEventListener("click", handleNumberClick);
-six.addEventListener("click", handleNumberClick);
-five.addEventListener("click", handleNumberClick);
-four.addEventListener("click", handleNumberClick);
-three.addEventListener("click", handleNumberClick);
-two.addEventListener("click", handleNumberClick);
-one.addEventListener("click", handleNumberClick);
-zero.addEventListener("click", handleNumberClick);
+numberButtons.forEach((numberButton) => {
+  numberButton.addEventListener("click", handleNumberClick);
+});
 
 function handleNumberClick(event) {
-  numberShow = event.target.id;
-  console.log(numberShow);
+  numberDisplay = event.target.id;
+  console.log(numberDisplay);
 }
 
-const division = document.querySelector("[id='/']");
-const times = document.querySelector("[id='*']");
-const minus = document.querySelector("[id='-']");
-const plus = document.querySelector("[id='+']");
+const operatorButtons = document.querySelectorAll(".operator-button");
 
-division.addEventListener("click", handleOperatorClick);
-times.addEventListener("click", handleOperatorClick);
-minus.addEventListener("click", handleOperatorClick);
-plus.addEventListener("click", handleOperatorClick);
+operatorButtons.forEach((operatorButton) => {
+  operatorButton.addEventListener("click", handleOperatorClick);
+});
 
 function handleOperatorClick(event) {
-  operatorShow = event.target.id;
-  console.log(operatorShow);
+  operatorDisplay = event.target.id;
+  console.log(operatorDisplay);
 }
 
 function add(num1, num2) {
