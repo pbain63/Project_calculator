@@ -33,7 +33,6 @@ numberButtons.forEach((numberButton) => {
 
 function handleNumberClick(event) {
   numberDisplay = event.target.id;
-  // console.log(numberDisplay);
 
   if (num1 && operator) {
     num2 = Number(num2 + numberDisplay);
@@ -71,12 +70,12 @@ function handleOperatorClick(event) {
     } else if (operator == "+") {
       operator = add;
     }
-    num2 = "";
+    num2 = ""; ////
     console.log(num2);
   } else {
-    operatorDisplay = event.target.id;
-    operator = operatorDisplay;
-    // operator = event.target.id;
+    // operatorDisplay = event.target.id;
+    // operator = operatorDisplay;
+    operator = event.target.id;
     console.log(operator);
     if (operator == "/") {
       operator = divide;
