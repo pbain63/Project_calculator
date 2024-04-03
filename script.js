@@ -15,6 +15,8 @@ const acButton = document.querySelector("#ac");
 acButton.addEventListener("click", () => {
   acDisplay = ac.id;
   console.log(acDisplay);
+  // display.textContent = 0;
+  // display.replaceChildren("0");
 });
 
 let acDisplay;
@@ -37,12 +39,12 @@ function handleNumberClick(event) {
   if (num1 && operator) {
     num2 = Number(num2 + numberDisplay);
 
-    //  display.textContent = num2;
+    display.textContent = num2;
     console.log(num2);
   } else {
     num1 = Number(num1 + numberDisplay);
 
-    //  display.textContent = num1;
+    display.textContent = num1;
     console.log(num1);
   }
 }
@@ -59,6 +61,7 @@ function handleOperatorClick(event) {
 
     num1 = result;
     console.log(num1);
+    display.textContent = num1;
     operator = event.target.id;
     console.log(operator);
     if (operator == "/") {
