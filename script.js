@@ -142,8 +142,8 @@ equal.addEventListener("click", () => {
   console.log(display.textContent);
 });
 
-//- decimal point does not work. For future rendezvous
-const decimalValue = document.querySelector("[id='.']");
+//- decimal point does not work. For future rendezvous:
+// const decimalValue = document.querySelector("[id='.']");
 
 // decimalValue.addEventListener("click", () => {
 //   decimalShow = decimalValue.id;
