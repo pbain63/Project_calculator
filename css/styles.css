@@ -61,8 +61,8 @@ body {
 [id="4"],
 [id="1"],
 [id="0"] {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 19.5px;
+  padding-left: 19.5px;
 }
 
 [id="8"],
@@ -91,7 +91,7 @@ body {
 [id="."] {
   padding-right: 23px;
   padding-left: 23px;
-  margin-left: 1px;
+  /* margin-left: 1px; */
 }
 
 [id="*"] {
