@@ -46,7 +46,10 @@ body {
   justify-content: space-between;
   margin-top: 2px;
 }
-
+.zeroStarter-row-container {
+  display: flex;
+  justify-content: space-between;
+}
 #undo {
   padding-right: 38px;
   padding-left: 38px;
@@ -136,4 +139,5 @@ body {
 [id="."],
 [id="0"] {
   /* background-color: lightblue; */
+  
 }
