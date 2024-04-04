@@ -12,13 +12,6 @@ const calculatorButtons = document.querySelectorAll(".cal-button");
 
 const acButton = document.querySelector("#ac");
 
-acButton.addEventListener("click", () => {
-  acDisplay = ac.id;
-  console.log(acDisplay);
-  // display.textContent = 0;
-  // display.replaceChildren("0");
-});
-
 let acDisplay;
 let numberDisplay;
 let operatorDisplay;
@@ -26,6 +19,16 @@ let operator;
 let num1 = "";
 let num2 = "";
 let result;
+
+acButton.addEventListener("click", () => {
+  acDisplay = ac.id;
+  console.log(acDisplay);
+  display.textContent = 0;
+  num1 = "";
+  num2 = "";
+  operator = "";
+});
+
 
 const numberButtons = document.querySelectorAll(".number-button");
 
