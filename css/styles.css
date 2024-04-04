@@ -51,7 +51,7 @@ body {
   justify-content: space-between;
 }
 #undo {
-  padding-right: 38px;
+  padding-right: 39px; /*  */
   padding-left: 38px;
   margin-left: 2px;
   background-color: chocolate;
@@ -61,8 +61,8 @@ body {
 [id="4"],
 [id="1"],
 [id="0"] {
-  padding-right: 21px;
-  padding-left: 21px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 [id="8"],
