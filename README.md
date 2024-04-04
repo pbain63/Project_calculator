@@ -1,7 +1,7 @@
 # Project: Calculator
 
 
-This project is a practice session from the "THE ODIN PROJECT"
+This project is the final project from JavaScript Basics section of the "THE ODIN PROJECT"
 
 
 Live Preview Link:
