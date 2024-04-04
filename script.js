@@ -21,7 +21,7 @@ let num2 = "";
 let result;
 
 acButton.addEventListener("click", () => {
-  acDisplay = ac.id;
+  acDisplay = acButton.id;
   console.log(acDisplay);
   display.textContent = 0;
   num1 = "";
@@ -29,6 +29,24 @@ acButton.addEventListener("click", () => {
   operator = "";
 });
 
+const undoButton = document.querySelector("#undo");
+
+undoButton.addEventListener("click", () => {
+  // undoDisplay = undoButton.id;
+  // console.log(undoDisplay);
+
+  if (num1 && operator) {
+    display.textContent = display.textContent.slice(0, -1);
+    num2 = Number(display.textContent);
+    console.log(num2);
+  } else {
+    display.textContent = display.textContent.slice(0, -1);
+    num1 = Number(display.textContent);
+    console.log(num1);
+    
+  }
+ 
+});
 
 const numberButtons = document.querySelectorAll(".number-button");
 
