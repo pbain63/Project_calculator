@@ -13,4 +13,4 @@ Live Preview Link:
 https://pbain63.github.io/Project_calculator/
 
 
-Technology: HTML5, CSS, JavaScript  
+Technology: HTML5, CSS, JavaScript, DOM
