@@ -43,9 +43,7 @@ undoButton.addEventListener("click", () => {
     display.textContent = display.textContent.slice(0, -1);
     num1 = Number(display.textContent);
     console.log(num1);
-    
   }
- 
 });
 
 const numberButtons = document.querySelectorAll(".number-button");
@@ -94,7 +92,7 @@ function handleOperatorClick(event) {
     } else if (operator == "+") {
       operator = add;
     }
-    num2 = ""; 
+    num2 = "";
     console.log(num2);
   } else {
     // operatorDisplay = event.target.id;
@@ -130,7 +128,6 @@ function operate(num1, num2, operator) {
   return operator(num1, num2);
 }
 
-
 const equal = document.querySelector("[id='=']");
 
 equal.addEventListener("click", () => {
@@ -151,7 +148,6 @@ equal.addEventListener("click", () => {
 
 //   if (decimalShow ) {
 //     display.textContent += decimalShow;
-//   } 
-    
-// })
+//   }
 
+// })
