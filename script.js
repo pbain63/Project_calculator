@@ -94,7 +94,7 @@ function handleOperatorClick(event) {
     } else if (operator == "+") {
       operator = add;
     }
-    num2 = ""; ////
+    num2 = ""; 
     console.log(num2);
   } else {
     // operatorDisplay = event.target.id;
@@ -129,7 +129,7 @@ function divide(num1, num2) {
 function operate(num1, num2, operator) {
   return operator(num1, num2);
 }
-// console.log(operate(8, 6, multiply));
+
 
 const equal = document.querySelector("[id='=']");
 
