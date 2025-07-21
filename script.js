@@ -140,7 +140,7 @@ equal.addEventListener("click", () => {
 });
 
 //- decimal point does not work. For future rendezvous:
-// const decimalValue = document.querySelector("[id='.']");
+const decimalButton = document.querySelector("[id='.']");
 
 // decimalValue.addEventListener("click", () => {
 //   decimalShow = decimalValue.id;
