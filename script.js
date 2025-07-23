@@ -158,5 +158,20 @@ decimalButton.addEventListener("click", () => {
       num2 += ".";
       display.textContent = num2;
     }
-  } 
+  } else {
+    // Handle num1 (before operator)
+    if (num1 === "") {
+      num1 = "0.";
+      display.textContent = num1;
+    } else if (typeof num1 === "number") {
+      num1 = num1.toString();
+      if (!num1.includes(".")) {
+        num1 += ".";
+        display.textContent = num1;
+      }
+    } else if (typeof num1 === "string" && !num1.includes(".")) {
+      num1 += ".";
+      display.textContent = num1;
+    }
+  }
 });
