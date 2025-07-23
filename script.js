@@ -142,7 +142,21 @@ equal.addEventListener("click", () => {
 //- decimal point does not work. For future rendezvous:
 const decimalButton = document.querySelector("[id='.']");
 
-decimalValue.addEventListener("click", () => {
-    
-
-})
+decimalButton.addEventListener("click", () => {
+  if (operator) {
+    // Handle num2 (after operator)
+    if (num2 === "") {
+      num2 = "0.";
+      display.textContent = num2;
+    } else if (typeof num2 === "number") {
+      num2 = num2.toString();
+      if (!num2.includes(".")) {
+        num2 += ".";
+        display.textContent = num2;
+      }
+    } else if (typeof num2 === "string" && !num2.includes(".")) {
+      num2 += ".";
+      display.textContent = num2;
+    }
+  } 
+});
